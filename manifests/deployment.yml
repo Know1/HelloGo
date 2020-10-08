@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hellogoserver 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hellogoserver
+  template:
+    metadata:
+      labels:
+        app: hellogoserver 
+    spec:
+      containers:
+        - name: hellogoserver 
+          image: luketest.azurecr.io/hellogoserver
+          ports:
+          - containerPort: 80
