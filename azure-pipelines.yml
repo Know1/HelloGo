@@ -13,10 +13,10 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '0c1b1892-9021-4181-a6a8-58f619484c2e'
   imageRepository: 'hellogoserver'
-  containerRegistry: 'luketest.azurecr.io'
+  containerRegistry: 'myregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'luketest016c-auth'
+  imagePullSecret: 'imagesecret-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
