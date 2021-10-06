@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: hellogoserver 
-          image: luketest.azurecr.io/hellogoserver
+          image: myregistry.azurecr.io/hellogoserver
           ports:
           - containerPort: 80
